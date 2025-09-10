@@ -1,0 +1,46 @@
+body{
+    background-color: rgb(227, 255, 247) !important;
+}
+.btn-create {
+  display: inline-block;
+  margin-inline-start: 750px;
+  background-color: #188b5cff;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.btn-create:hover {
+  background-color: rgb(16, 99, 64);   /* Darker blue */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-create:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+.link-update {
+  color: #2563eb; /* blue */
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+.link-update:hover {
+  color: #183481;
+}
+
+/* Delete Link */
+.link-delete {
+  color: #dc2626; /* red */
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+.link-delete:hover {
+  color: #961919; 
+}
