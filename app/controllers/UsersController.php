@@ -25,7 +25,7 @@ class UsersController extends Controller {
                 'email' => $email
             );
             if ($this->UsersModel->insert($data)){
-                redirect('users/UsersData');
+                redirect();
             } else {
                 echo "Error inserting data.";
             }
@@ -48,7 +48,7 @@ class UsersController extends Controller {
                 'email' => $email
             );
             if ($this->UsersModel->update($id, $data)){
-                redirect('users/UsersData');
+                redirect();
             } else {
                 echo "Error updating data.";
             }
@@ -59,7 +59,7 @@ class UsersController extends Controller {
     }
     function delete($id){
         if ($this->UsersModel->delete($id)){
-            redirect('users/UsersData');
+            redirect();
         } else {
             echo "Error deleting data.";
         }
