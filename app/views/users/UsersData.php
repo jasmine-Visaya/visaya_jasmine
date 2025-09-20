@@ -94,9 +94,8 @@
     <?php endforeach; ?>
   </table>
   
- <div style="width:80%;margin:20px auto;text-align:center;">
-      <?=$page;?>
-  </div>
+<?php
+	echo $page;?>
 
   <a  href="<?=site_url('users/create');?>" class="btn-create">Create Record</a>
 </body>
