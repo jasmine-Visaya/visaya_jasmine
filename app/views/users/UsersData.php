@@ -64,7 +64,7 @@
 <body>
   <h1>Welcome to UsersData View</h1>
 
-<form action="<?=site_url('users/UsersData');?>" method="get" class="col-sm-4 float-end d-flex">
+<form action="<?=site_url('users');?>" method="get" class="col-sm-4 float-end d-flex">
 		<?php
 		$q = '';
 		if(isset($_GET['q'])) {
