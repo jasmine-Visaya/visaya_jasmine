@@ -26,9 +26,9 @@ class UsersController extends Controller {
 
         $records_per_page = 10;
 
-        $all = $this->UsersModel->page($q, $records_per_page, $page);
-        $data['all'] = $all['records'];
-        $total_rows = $all['total_rows'];
+        $users = $this->UsersModel->page($q, $records_per_page, $page);
+        $data['users'] = $users['records'];
+        $total_rows = $users['total_rows'];
         $this->pagination->set_options([
             'first_link'     => '⏮ First',
             'last_link'      => 'Last ⏭',

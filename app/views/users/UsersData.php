@@ -84,12 +84,11 @@
       <th>Email</th>
       <th>Actions</th>
     </tr>
-    <?php foreach (html_escape($users) as $user): ?>
+    <?php foreach ($users as $user): ?>
     <tr>
-      <td><?=$user['id'];?></td>
-      <td><?=$user['username'];?></td>
-      <td><?=$user['email'];?></td>
-      
+      <td><?= html_escape($user['id']); ?></td>
+      <td><?= html_escape($user['username']); ?></td>
+      <td><?= html_escape($user['email']); ?></td>
       <td><a href="<?=site_url('users/update/'.$user['id']);?>" class="link-update">Update </a> | <a href="<?=site_url('users/delete/'.$user['id']);?>" class="link-delete">Delete</a></td>
     </tr>
     <?php endforeach; ?>
