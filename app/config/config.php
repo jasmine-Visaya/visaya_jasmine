@@ -261,7 +261,7 @@ $config['cache_default_expires']   = 0;
 |
 |
 */
-$config['encryption_key']           = '';
+$config['encryption_key']           = 'h2Y8qM5vT9rE3xJ1pL6zC4kB7dN0wF2g';
 
 /*
 |--------------------------------------------------------------------------
