@@ -24,23 +24,31 @@ body{
   transform: translateY(0);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
+/* Update Button */
 .link-update {
-  color: #2563eb; /* blue */
+  background-color: #2563eb; /* Tailwind blue-600 */
+  color: white;
   font-weight: 500;
+  padding: 5px 12px;
+  border-radius: 6px;
   text-decoration: none;
-  transition: color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+  margin-right: 5px;
 }
 .link-update:hover {
-  color: #183481;
+  background-color: #183481; /* Darker blue */
 }
 
-/* Delete Link */
+/* Delete Button */
 .link-delete {
-  color: #dc2626; /* red */
+  background-color: #dc2626; /* Tailwind red-600 */
+  color: white;
   font-weight: 500;
+  padding: 5px 12px;
+  border-radius: 6px;
   text-decoration: none;
-  transition: color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 }
 .link-delete:hover {
-  color: #961919; 
+  background-color: #961919; /* Darker red */
 }

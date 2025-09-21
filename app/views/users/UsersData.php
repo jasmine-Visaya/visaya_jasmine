@@ -91,7 +91,7 @@
 /* Search Button */
 .btn-primary {
   background-color: #0d9488; /* teal-600 */
-  margin-top:20px
+  margin-top:70px
   border: none;
   padding: 8px 16px;
   color: white;
