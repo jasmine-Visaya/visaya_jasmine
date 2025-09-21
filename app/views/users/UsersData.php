@@ -60,13 +60,26 @@
       font-size: 14px;
     }
 
+.search-container {
+  display: flex;
+  justify-content: flex-end; /* align to right */
+  margin-bottom: 16px;
+}
+
+.search-bar {
+  display: flex;
+  gap: 8px; /* space between input and button */
+}
+
+/* Search Input */
 .form-control {
+  flex: 1;
   padding: 8px 12px;
   border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 14px;
-  width: 100%;
   transition: border 0.3s, box-shadow 0.3s;
+  min-width: 200px; /* keeps it from shrinking too small */
 }
 
 .form-control:focus {
@@ -75,7 +88,7 @@
   outline: none;
 }
 
-/* Button beside search */
+/* Search Button */
 .btn-primary {
   background-color: #0d9488; /* teal-600 */
   border: none;
@@ -84,18 +97,61 @@
   border-radius: 6px;
   cursor: pointer;
   transition: background 0.3s;
+  white-space: nowrap;
 }
 
 .btn-primary:hover {
   background-color: #0f766e; /* teal-700 */
 }
 
+
+
+/* Pagination container */
+.pagination {
+    display: flex;
+    justify-content: center; /* center align */
+    margin-top: 20px;
+}
+
+/* Pagination links */
+.pagination li a {
+    color: #0d9488; /* teal-600 */
+    border: 1px solid #0d9488;
+    padding: 6px 12px;
+    margin: 0 3px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.pagination li a:hover {
+    background-color: #0d9488;
+    color: white;
+}
+
+/* Active page */
+.pagination .active a {
+    background-color: #0d9488;
+    color: white;
+    border-color: #0d9488;
+}
+
+/* Disabled state */
+.pagination .disabled a {
+    color: #aaa;
+    border-color: #ddd;
+    cursor: not-allowed;
+}
+
+
+
   </style>
 </head>
 <body>
   <h1>Welcome to UsersData View</h1>
-
-<form action="<?=site_url('users');?>" method="get" class="col-sm-4 float-end d-flex">
+<div class="search-container">
+<form action="<?=site_url('users');?>" method="get" class="search-bar col-sm-4 float-end d-flex">
 		<?php
 		$q = '';
 		if(isset($_GET['q'])) {
@@ -105,6 +161,9 @@
         <input class="form-control me-2" name="q" type="text" placeholder="Search" value="<?=html_escape($q);?>">
         <button type="submit" class="btn btn-primary" type="button">Search</button>
 	</form>
+</div>
+
+
 
 
 
