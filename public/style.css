@@ -26,13 +26,14 @@ body{
 }
 /* Update Button */
 .link-update {
-  color: white;
+  color: #0d9488;
   font-weight: 500;
   padding: 5px 12px;
   border-radius: 6px;
   text-decoration: none;
   transition: background-color 0.2s ease-in-out;
   margin-right: 5px;
+  border-style: solid 2px;
   border-color: #0d9488;
 }
 .link-update:hover {
@@ -41,8 +42,9 @@ body{
 
 /* Delete Button */
 .link-delete {
+  border-style: solid 2px;
   border-color: #0d9488;
-  color: white;
+  color:#0d9488;
   font-weight: 500;
   padding: 5px 12px;
   border-radius: 6px;
