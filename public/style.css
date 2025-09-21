@@ -33,16 +33,17 @@ body{
   text-decoration: none;
   transition: background-color 0.2s ease-in-out;
   margin-right: 5px;
-  border-style: solid 2px;
+  border-style: solid 5px;
   border-color: #0d9488;
 }
 .link-update:hover {
   background-color: #183481; /* Darker blue */
+  color: white;
 }
 
 /* Delete Button */
 .link-delete {
-  border-style: solid 2px;
+  border-style: solid 5px;
   border-color: #0d9488;
   color:#0d9488;
   font-weight: 500;
@@ -53,4 +54,5 @@ body{
 }
 .link-delete:hover {
   background-color: #961919; /* Darker red */
+  color: white;
 }
