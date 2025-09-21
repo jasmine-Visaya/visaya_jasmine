@@ -61,6 +61,7 @@
     }
 
 .search-container {
+  margin-top: 20px;
   display: flex;
   justify-content: flex-end; /* align to right */
   margin-bottom: 16px;
@@ -68,7 +69,7 @@
 
 .search-bar {
   display: flex;
-  gap: 8px; /* space between input and button */
+  gap: 10px; /* space between input and button */
 }
 
 /* Search Input */
@@ -90,8 +91,7 @@
 
 /* Search Button */
 .btn-primary {
-  background-color: #0d9488; /* teal-600 */
-  margin-top:70px
+  background-color: #0d9488; 
   border: none;
   padding: 8px 16px;
   color: white;
