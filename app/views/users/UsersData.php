@@ -91,6 +91,7 @@
 /* Search Button */
 .btn-primary {
   background-color: #0d9488; /* teal-600 */
+  margin-top:20px
   border: none;
   padding: 8px 16px;
   color: white;
@@ -108,6 +109,7 @@
 
 /* Pagination container */
 .pagination {
+    list-style: none; 
     display: flex;
     justify-content: center; /* center align */
     margin-top: 20px;
