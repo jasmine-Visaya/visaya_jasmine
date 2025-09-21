@@ -59,6 +59,37 @@
     td {
       font-size: 14px;
     }
+
+.form-control {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  width: 100%;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.form-control:focus {
+  border-color: #0d9488; /* teal-600 */
+  box-shadow: 0 0 4px rgba(13, 148, 136, 0.5);
+  outline: none;
+}
+
+/* Button beside search */
+.btn-primary {
+  background-color: #0d9488; /* teal-600 */
+  border: none;
+  padding: 8px 16px;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #0f766e; /* teal-700 */
+}
+
   </style>
 </head>
 <body>
